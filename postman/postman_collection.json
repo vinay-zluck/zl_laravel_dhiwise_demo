@@ -1,0 +1,2388 @@
+{
+"info": {
+"_postman_id": "b9337051-585d-48e0-9de1-791ea317f362",
+"name": "Laravel Builder Postman",
+"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+},
+"item": [
+{
+"name": "admin",
+"description": "admin APIs",
+"item": [
+{
+"name": "Contact_Group",
+"description": "Contact_Group Model APIs",
+"item": [
+{
+"name": "Add Contact_group",
+"request": {
+"url": "{{host}}/api/admin/contact_groups",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"contact_id\": \"\" , \n  \"group_id\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Contact_group Details",
+"request": {
+"url": "{{host}}/api/admin/contact_groups/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Contact_group Listing",
+"request": {
+"url": "{{host}}/api/admin/contact_groups",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update Contact_group",
+"request": {
+"url": "{{host}}/api/admin/contact_groups/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"id\": \"\" , \n  \"contact_id\": \"\" , \n  \"group_id\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete Contact_group",
+"request": {
+"url": "{{host}}/api/admin/contact_groups/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add Contact_group",
+"request": {
+"url": "{{host}}/api/admin/contact_groups/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"contact_id\": \"\" , \n\t\t\"group_id\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"contact_id\": \"\" , \n\t\t\"group_id\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update Contact_group",
+"request": {
+"url": "{{host}}/api/admin/contact_groups/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"id\": \"\" , \n\t\t\"contact_id\": \"\" , \n\t\t\"group_id\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"id\": \"\" , \n\t\t\"contact_id\": \"\" , \n\t\t\"group_id\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Group",
+"description": "Group Model APIs",
+"item": [
+{
+"name": "Add Group",
+"request": {
+"url": "{{host}}/api/admin/groups",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"name\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Group Details",
+"request": {
+"url": "{{host}}/api/admin/groups/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Group Listing",
+"request": {
+"url": "{{host}}/api/admin/groups",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update Group",
+"request": {
+"url": "{{host}}/api/admin/groups/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"id\": \"\" , \n  \"name\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete Group",
+"request": {
+"url": "{{host}}/api/admin/groups/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add Group",
+"request": {
+"url": "{{host}}/api/admin/groups/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update Group",
+"request": {
+"url": "{{host}}/api/admin/groups/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"id\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"id\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Contact",
+"description": "Contact Model APIs",
+"item": [
+{
+"name": "Add Contact",
+"request": {
+"url": "{{host}}/api/admin/contacts",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"name\": \"\" , \n  \"contact_no\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Contact Details",
+"request": {
+"url": "{{host}}/api/admin/contacts/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Contact Listing",
+"request": {
+"url": "{{host}}/api/admin/contacts",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update Contact",
+"request": {
+"url": "{{host}}/api/admin/contacts/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"id\": \"\" , \n  \"name\": \"\" , \n  \"contact_no\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete Contact",
+"request": {
+"url": "{{host}}/api/admin/contacts/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add Contact",
+"request": {
+"url": "{{host}}/api/admin/contacts/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"name\": \"\" , \n\t\t\"contact_no\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"name\": \"\" , \n\t\t\"contact_no\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update Contact",
+"request": {
+"url": "{{host}}/api/admin/contacts/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"id\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"contact_no\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"id\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"contact_no\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "User",
+"description": "User Model APIs",
+"item": [
+{
+"name": "Add User",
+"request": {
+"url": "{{host}}/api/admin/users",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"username\": \"\" , \n  \"password\": \"\" , \n  \"email\": \"\" , \n  \"name\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "User Details",
+"request": {
+"url": "{{host}}/api/admin/users/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "User Listing",
+"request": {
+"url": "{{host}}/api/admin/users",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update User",
+"request": {
+"url": "{{host}}/api/admin/users/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"id\": \"\" , \n  \"username\": \"\" , \n  \"password\": \"\" , \n  \"email\": \"\" , \n  \"name\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete User",
+"request": {
+"url": "{{host}}/api/admin/users/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add User",
+"request": {
+"url": "{{host}}/api/admin/users/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"username\": \"\" , \n\t\t\"password\": \"\" , \n\t\t\"email\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"username\": \"\" , \n\t\t\"password\": \"\" , \n\t\t\"email\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update User",
+"request": {
+"url": "{{host}}/api/admin/users/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"id\": \"\" , \n\t\t\"username\": \"\" , \n\t\t\"password\": \"\" , \n\t\t\"email\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"id\": \"\" , \n\t\t\"username\": \"\" , \n\t\t\"password\": \"\" , \n\t\t\"email\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Role",
+"description": "admin Roles API",
+"item": [
+{
+"name": "Role Details",
+"request": {
+"url": "{{host}}/api/admin/roles/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Role Listing",
+"request": {
+"url": "{{host}}/api/admin/roles",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Add role",
+"request": {
+"url": "{{host}}/api/admin/roles",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"name\": \"Client\",\n  \"guard_name\": \"web\",\n  \"permissions\": [1,2,3]\n }"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Update role",
+"request": {
+"url": "{{host}}/api/admin/roles/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Delete role",
+"request": {
+"url": "{{host}}/api/admin/roles/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Bulk Add role",
+"request": {
+"url": "{{host}}/api/admin/roles/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Bulk Update role",
+"request": {
+"url": "{{host}}/api/admin/roles/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Permission",
+"description": "admin Permission API",
+"item": [
+{
+"name": "Permission Details",
+"request": {
+"url": "{{host}}/api/admin/permissions/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Permission Listing",
+"request": {
+"url": "{{host}}/api/admin/permissions",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Login",
+"description": "admin Login API",
+"item": [
+{
+"name": "Register",
+"request": {
+"url": "{{host}}/api/admin/register",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"customer\": \"1\",\n  \"username\": \"Tony\",\n  \"password\": \"Tony123\",\n  \"email\": \"tony123@gamil.com\",\n  \"name\": \"Tony\",\n  \"isActive\": \"true\",\n  \"createdAt\": \"2021-09-06\",\n  \"updatedAt\": \"2021-09-06\",\n  \"addedBy\": \"1\",\n  \"updatedBy\": \"1\",\n  \"role\": \"1\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Login",
+"request": {
+"url": "{{host}}/api/admin/login",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"username\": \"admin\",\n  \"password\": \"12345678\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Forgot Password",
+"request": {
+"url": "{{host}}/api/admin/forgot-password",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"email\": \"admin@dhiwise.com\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Validate OTP",
+"request": {
+"url": "{{host}}/api/admin/validate-otp",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"otp\": \"icR86F\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Reset Password",
+"request": {
+"url": "{{host}}/api/admin/reset-password",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"code\": \"icR86F\"\n, \"newPassword\": \"Your Password\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Change Password",
+"request": {
+"url": "{{host}}/api/admin/change-password",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"oldPassword\": \"Your Old Password\"\n, \"newPassword\": \"Your New Password\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+}
+]
+}
+,
+{
+"name": "device",
+"description": "device APIs",
+"item": [
+{
+"name": "Contact_Group",
+"description": "Contact_Group Model APIs",
+"item": [
+{
+"name": "Add Contact_group",
+"request": {
+"url": "{{host}}/api/device/contact_groups",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"contact_id\": \"\" , \n  \"group_id\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Contact_group Details",
+"request": {
+"url": "{{host}}/api/device/contact_groups/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Contact_group Listing",
+"request": {
+"url": "{{host}}/api/device/contact_groups",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update Contact_group",
+"request": {
+"url": "{{host}}/api/device/contact_groups/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"id\": \"\" , \n  \"contact_id\": \"\" , \n  \"group_id\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete Contact_group",
+"request": {
+"url": "{{host}}/api/device/contact_groups/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add Contact_group",
+"request": {
+"url": "{{host}}/api/device/contact_groups/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"contact_id\": \"\" , \n\t\t\"group_id\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"contact_id\": \"\" , \n\t\t\"group_id\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update Contact_group",
+"request": {
+"url": "{{host}}/api/device/contact_groups/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"id\": \"\" , \n\t\t\"contact_id\": \"\" , \n\t\t\"group_id\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"id\": \"\" , \n\t\t\"contact_id\": \"\" , \n\t\t\"group_id\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Group",
+"description": "Group Model APIs",
+"item": [
+{
+"name": "Add Group",
+"request": {
+"url": "{{host}}/api/device/groups",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"name\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Group Details",
+"request": {
+"url": "{{host}}/api/device/groups/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Group Listing",
+"request": {
+"url": "{{host}}/api/device/groups",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update Group",
+"request": {
+"url": "{{host}}/api/device/groups/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"id\": \"\" , \n  \"name\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete Group",
+"request": {
+"url": "{{host}}/api/device/groups/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add Group",
+"request": {
+"url": "{{host}}/api/device/groups/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update Group",
+"request": {
+"url": "{{host}}/api/device/groups/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"id\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"id\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Contact",
+"description": "Contact Model APIs",
+"item": [
+{
+"name": "Add Contact",
+"request": {
+"url": "{{host}}/api/device/contacts",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"name\": \"\" , \n  \"contact_no\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Contact Details",
+"request": {
+"url": "{{host}}/api/device/contacts/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Contact Listing",
+"request": {
+"url": "{{host}}/api/device/contacts",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update Contact",
+"request": {
+"url": "{{host}}/api/device/contacts/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"id\": \"\" , \n  \"name\": \"\" , \n  \"contact_no\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete Contact",
+"request": {
+"url": "{{host}}/api/device/contacts/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add Contact",
+"request": {
+"url": "{{host}}/api/device/contacts/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"name\": \"\" , \n\t\t\"contact_no\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"name\": \"\" , \n\t\t\"contact_no\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update Contact",
+"request": {
+"url": "{{host}}/api/device/contacts/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"id\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"contact_no\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"id\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"contact_no\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "User",
+"description": "User Model APIs",
+"item": [
+{
+"name": "Add User",
+"request": {
+"url": "{{host}}/api/device/users",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"username\": \"\" , \n  \"password\": \"\" , \n  \"email\": \"\" , \n  \"name\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "User Details",
+"request": {
+"url": "{{host}}/api/device/users/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "User Listing",
+"request": {
+"url": "{{host}}/api/device/users",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update User",
+"request": {
+"url": "{{host}}/api/device/users/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"id\": \"\" , \n  \"username\": \"\" , \n  \"password\": \"\" , \n  \"email\": \"\" , \n  \"name\": \"\" , \n  \"is_active\": \"\"   \n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete User",
+"request": {
+"url": "{{host}}/api/device/users/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add User",
+"request": {
+"url": "{{host}}/api/device/users/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"username\": \"\" , \n\t\t\"password\": \"\" , \n\t\t\"email\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"username\": \"\" , \n\t\t\"password\": \"\" , \n\t\t\"email\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update User",
+"request": {
+"url": "{{host}}/api/device/users/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "[\n\t{\n\t\t\"id\": \"\" , \n\t\t\"username\": \"\" , \n\t\t\"password\": \"\" , \n\t\t\"email\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}, \n\t{\n\t\t\"id\": \"\" , \n\t\t\"username\": \"\" , \n\t\t\"password\": \"\" , \n\t\t\"email\": \"\" , \n\t\t\"name\": \"\" , \n\t\t\"is_active\": \"\"   \n\t}\n]" },
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Login",
+"description": "device Login API",
+"item": [
+{
+"name": "Register",
+"request": {
+"url": "{{host}}/api/device/register",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"customer\": \"1\",\n  \"username\": \"Tony\",\n  \"password\": \"Tony123\",\n  \"email\": \"tony123@gamil.com\",\n  \"name\": \"Tony\",\n  \"isActive\": \"true\",\n  \"createdAt\": \"2021-09-06\",\n  \"updatedAt\": \"2021-09-06\",\n  \"addedBy\": \"1\",\n  \"updatedBy\": \"1\",\n  \"role\": \"1\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Login",
+"request": {
+"url": "{{host}}/api/device/login",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"username\": \"admin\",\n  \"password\": \"12345678\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Forgot Password",
+"request": {
+"url": "{{host}}/api/device/forgot-password",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"email\": \"admin@dhiwise.com\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Validate OTP",
+"request": {
+"url": "{{host}}/api/device/validate-otp",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"otp\": \"icR86F\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Reset Password",
+"request": {
+"url": "{{host}}/api/device/reset-password",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"code\": \"icR86F\"\n, \"newPassword\": \"Your Password\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+},
+{
+"name": "Change Password",
+"request": {
+"url": "{{host}}/api/device/change-password",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"oldPassword\": \"Your Old Password\"\n, \"newPassword\": \"Your New Password\"\n}"
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+}
+]
+}
+],
+"variable": [
+{
+"key": "host",
+"value": "http://localhost"
+},
+{
+"key": "token",
+"value": "token here"
+}
+]
+}
